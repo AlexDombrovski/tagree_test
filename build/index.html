@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="prefetch" href="fonts/Roboto/Roboto-Regular.woff">
+    <link rel="prefetch" href="fonts/Roboto/Roboto-Medium.woff">
+    <link rel="prefetch" href="fonts/Roboto/Roboto-Bold.woff">
+    <link rel="prefetch" href="fonts/Firasans/Firasansregular.woff">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>TAGREE-test</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__wrapper">
+        <div class="header__search-row">
+          <div class="search-row__logo"><img class="logo__symbol" src="img/symbol.png" alt=""><img class="logo__brandname" src="img/brandname.png" alt=""></div>
+          <form class="search-row__search" name="" action="" method="get">
+            <div class="search__select"><img class="select__figure" src="img/figure_10.png" alt="">
+              <select class="select__products">
+                <option disabled selected>Products</option>
+                <option value="product1">Product1</option>
+                <option value="product2">Product2</option>
+                <option value="product3">Product3</option>
+              </select>
+            </div>
+            <input class="search__input" type="text" placeholder="Search" name="">
+            <div class="button__general">
+              <input class="search__button" type="submit" value=""><img src="img/triangle.png" alt="">
+            </div>
+          </form>
+          <div class="search-row__profile">
+            <p class="profile__name">Ivan Ivanov</p>
+            <div class="profile__avatar"><img src="img/avatar.png" alt=""></div><img class="profile__button" src="img/select2red.png" alt="">
+          </div>
+        </div>
+        <div class="header__company">
+          <div class="company__title">
+            <p class="title__name">Сompany</p>
+            <p class="title__index">Index / </p>
+            <p class="title__comp">Company</p>
+          </div>
+        </div>
+        <div class="header__nav">
+          <div class="nav__pro-description">
+            <div class="pro-description__icon"><img src="img/burger_small.png" alt=""></div>
+            <div class="pro-description__title">
+              <p class="title__relevant">24-29 Raw hides, skins, leather, & ...</p>
+              <p class="title__general">26 Wool & fine or coarse animal hair, inc ...</p>
+            </div>
+          </div>
+          <nav class="nav_menu">
+            <ul class="menu_list">
+              <li><a href="http://">Company</a></li>
+              <li><a href="http://">Members Sell</a></li>
+              <li><a href="http://">Members Buy</a></li>
+              <li><a href="http://">News</a></li>
+              <li><a href="http://">Video</a></li>
+              <li><a href="http://">Events</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <div class="left-menu">
+          <ul class="left-menu__list">
+            <li class="list__item"><a class="list__item_link" href="">My profile</a></li>
+            <li class="list__item list__item_active"><a class="list__item_link" href="">My company</a></li>
+            <li class="list__item"><a class="list__item_link" href="">My servises</a></li>
+            <li class="list__item"><a class="list__item_link" href="">My files</a></li>
+            <li class="list__item"><a class="list__item_link" href="">My mail</a></li>
+            <li class="list__item"><a class="list__item_link" href="">My favourites</a></li>
+            <li class="list__item"><a class="list__item_link" href="">My sell offers</a></li>
+            <li class="list__item"><a class="list__item_link" href="">My buy offers</a></li>
+            <li class="list__item"><a class="list__item_link" href="">My news</a></li>
+            <li class="list__item"><a class="list__item_link" href="">My video</a></li>
+            <li class="list__item"><a class="list__item_link" href="">My event</a></li>
+            <li class="list__item"><a class="list__item_link" href="">My subscription</a></li>
+          </ul>
+        </div>
+        <div class="sections__wrapper">
+          <div class="wrapper__advertizing_block">
+            <div class="advertizing-block"><img src="img/advertizing-block.png" alt=""></div>
+          </div>
+          <section class="person-profile">
+            <div class="profile__image"><img src="img/person-image.png" alt=""></div>
+            <div class="profile__data">
+              <form action="" method="get">
+                <p class="data__name">
+                  <input type="text" value="Ivan Ivanov">
+                </p>
+                <p class="data__phone-number">
+                  <label>Phone number:</label>
+                  <input type="text" value="+79110000000">
+                </p>
+                <button class="data__button" type="submit">Edit</button>
+              </form>
+            </div>
+          </section>
+          <section class="mycompany__logo">
+            <h3 class="mycompany-logo__title">My Company</h3>
+            <div class="mycompany-logo__image_wrapper">
+              <div class="image"><img src="img/logo-company.png" alt=""></div>
+              <div class="choice">
+                <form class="choice__form" action="" method="">
+                  <div class="choice__form_input">
+                    <input type="text" name="">
+                    <button type="submit">Обзор</button>
+                  </div>
+                  <button class="choice__form_button" type="submit">Сhange logo</button>
+                </form>
+              </div>
+            </div>
+          </section>
+          <section class="mycompany__data">
+            <form id="data__form" action="" method="">
+              <div class="data__form_general">
+                <label class="general_label">Country<span>* </span></label>
+                            <select class="general_countries" name="">
+                              <option class="country" selected>Russia</option>
+                              <option class="country">Romania</option>
+                              <option class="country">Ruanda</option>
+                            </select>
+                <label class="general_label">Region<span>*</span></label>
+                            <input class="general-input" type="text" name="" value="" required>
+                <label class="general_label">City<span>*</span></label>
+                            <input class="general-input" type="text" name="" value="" required>
+                <label class="general_label">Company name (Eng)<span>*</span></label>
+                            <input class="company-name-engl" type="text" name="" value="Conta, ООО" required>
+                <label class="general_label">Company Name (Rus)<span>*</span></label>
+                            <input class="company-name-rus" type="text" name="" value="Конта, ООО" required>
+                <label class="general_label">Short description<span>*</span></label>
+                            <textarea class="short-description" maxlength="100" required></textarea>
+                <p class="general_par">100 max</p>
+                <label class="general_label">Full description<span>*</span></label>
+                            <textarea class="short-description" maxlength="500" required></textarea>
+                <p class="general_par">500 max</p>
+              </div>
+              <div class="data__form_contacts">
+                <label class="general_label">Office adress<span>*</span></label>
+                            <input class="general-input" type="text" name="" value="" required>
+                <label class="general_label">Post adress<span>*</span></label>
+                            <input class="general-input" type="text" name="" value="" required>
+                <label class="general_label">INN<span>*</span></label>
+                            <input class="general-input" type="text" name="" value="" required>
+                <label class="general_label">Phone number</label>
+                <div class="phone-numbers">
+                  <input class="general-input_phone" type="tel" name="" value="" onchange="checkingPhone(this.value)">
+                  <div class="phone-numbers_more-button"><img src="img/plus.png" alt=""></div>
+                </div>
+                <label class="general_label">Fax</label>
+                <input class="general-input_fax" type="tel" name="" value="" onchange="checkingFax(this.value)">
+                <label class="general_label">E-mail<span>*</span></label>
+                            <input class="general-input" type="email" name="" value="" required>
+                <label class="general_label">Web-site</label>
+                <input class="general-input" type="text" name="" value="">
+              </div>
+            </form>
+            <div class="data__form_button">
+              <button class="button_alldata" type="submit" form="data__form">Save</button>
+            </div>
+          </section>
+          <section class="products">
+            <form class="products__form" action="" method="" name="">
+              <lable class="form__products_label">Products<span>* </span></lable>
+              <select class="form__products_select" multiple="multiple">
+                <option class="products_option" value="Alaska Pollock">Alaska Pollock</option>
+                <option class="products_option" value="Textiles">Textiles</option>
+                <option class="products_option" value="Chemicals &amp; allied industries" style="display: block">Chemicals & allied industries</option>
+              </select>
+              <div class="form__products_button">
+                <button class="button_alldata" type="submit">Save </button>
+              </div>
+            </form>
+          </section>
+          <section class="purchases">
+            <div class="purchases__shipment">
+              <h5 class="shipment__title">Shipment (Purchases)</h5>
+              <p class="shipment__desc">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              </p>
+            </div>
+            <div class="purchases__quotas">
+              <h5 class="quotas__title">Capture quotas</h5>
+              <p class="quotas__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              </p>
+            </div>
+          </section>
+        </div>
+      </article>
+      <section class="bottom-advertizing__wrap"><img class="bottom-advertizing__image" src="img/advertizing-block.png" alt=""></section>
+    </main>
+    <footer>
+      <div class="footer__wrap">
+        <div class="footer__nav">
+          <div class="nav__logo"><img class="logo__image" src="img/brandname_bottom.png" alt="">
+            <p class="logo__desc">ООО "Фишнет" 2016</p>
+          </div>
+          <nav class="bottom-menu">
+            <ul>
+              <li><a href="/">User agreement</a></li>
+              <li><a href="/">ImpexGlobal</a></li>
+              <li><a href="/">Our services</a></li>
+              <li><a href="/">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__rights">
+          <p class="rights__title">Разработка сайта —  Студия Артема Городецкого</p>
+          <div class="rights__logo"><img class="rights__logo_img" src="img/a&amp;g.png" alt=""></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
