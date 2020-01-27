@@ -1,0 +1,42 @@
+.header__wrapper
+  .header__search-row
+    .search-row__logo
+      img.logo__symbol(src="img/symbol.png", alt="")
+      img.logo__brandname(src="img/brandname.png", alt="")
+    form.search-row__search(name="" action="" method="get")
+      .search__select
+        img.select__figure(src="img/figure_10.png", alt="")
+        select.select__products
+          option(disabled, selected) Products
+          option(value="product1") Product1
+          option(value="product2") Product2
+          option(value="product3") Product3
+      input.search__input(type="text", placeholder="Search", name="")
+      .button__general
+        input.search__button(type="submit", value="")
+        img(src="img/triangle.png", alt="")
+    .search-row__profile
+      p.profile__name Ivan Ivanov
+      .profile__avatar
+        img(src="img/avatar.png", alt="")
+      img.profile__button(src="img/select2red.png", alt="")
+  .header__company
+    .company__title
+      p.title__name Сompany
+      p.title__index Index / 
+      p.title__comp Company
+  .header__nav
+    .nav__pro-description
+      .pro-description__icon
+        img(src="img/burger_small.png", alt="")
+      .pro-description__title
+        p.title__relevant 24-29 Raw hides, skins, leather, & ...
+        p.title__general 26 Wool & fine or coarse animal hair, inc ...
+    nav.nav_menu
+      ul.menu_list
+        li: a(href="http://") Company
+        li: a(href="http://") Members Sell
+        li: a(href="http://") Members Buy
+        li: a(href="http://") News
+        li: a(href="http://") Video
+        li: a(href="http://") Events

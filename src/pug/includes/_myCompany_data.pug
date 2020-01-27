@@ -1,0 +1,81 @@
+//- choise of country
+mixin countriesSelect
+  select.general_countries(name="")
+    option.country(selected) Russia
+    option.country Romania
+    option.country Ruanda
+
+
+//- text input mixin
+mixin textInput
+  input.general-input(type="text" name="" value="" required)
+
+//- email input mixin
+mixin emailInput
+  input.general-input(type="email" name="" value="" required)
+
+//-
+mixin companyNameEngl
+  input.company-name-engl(type="text" name="" value="Conta, ООО" required)
+//-
+mixin companyNameRus
+  input.company-name-rus(type="text" name="" value="Конта, ООО" required)
+//-
+mixin shortDescription
+  textarea.short-description(maxlength="100" required)
+
+//-
+mixin fullDescription
+  textarea.short-description(maxlength="500" required)
+
+//- block beginning 
+form#data__form(action="" method="")
+  .data__form_general
+    label.general_label Country
+      span * 
+    +countriesSelect
+    label.general_label Region
+      span *
+    +textInput
+    label.general_label City
+      span *
+    +textInput
+    label.general_label Company name (Eng)
+      span *
+    +companyNameEngl 
+    label.general_label Company Name (Rus)
+      span *
+    +companyNameRus
+    label.general_label Short description
+      span *
+    +shortDescription
+    p.general_par 100 max
+    label.general_label Full description
+      span *
+    +fullDescription
+    p.general_par 500 max
+  //- block contacts
+  .data__form_contacts
+    label.general_label Office adress
+      span *
+    +textInput
+    label.general_label Post adress
+      span *
+    +textInput
+    label.general_label INN
+      span *
+    +textInput
+    label.general_label Phone number
+    .phone-numbers
+      input.general-input_phone(type="tel" name="" value="" onchange="checkingPhone(this.value)")
+      .phone-numbers_more-button
+        img(src="img/plus.png" alt="")
+    label.general_label Fax
+    input.general-input_fax(type="tel" name="" value="" onchange="checkingFax(this.value)")
+    label.general_label E-mail
+      span *
+    +emailInput
+    label.general_label Web-site
+    input.general-input(type="text" name="" value="")
+.data__form_button
+  button.button_alldata(type="submit" form="data__form") Save

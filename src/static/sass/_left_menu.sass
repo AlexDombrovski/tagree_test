@@ -1,0 +1,25 @@
+.left-menu
+  background-color: $White
+
+.left-menu__list
+  margin-left: 41px
+  margin-top: 5px
+  .list__item
+    display: flex
+    align-items: center
+    height: 38px
+    padding-left: 20px
+    font-family: 'Roboto Reg', sans-serif
+    font-size: 14px
+    &:hover
+      background-color: #00518e
+      .list__item_link
+        color: #ffffff
+    &_active
+      background-color: $brandRed
+      & > .list__item_link
+        color: #ffffff
+    &_link
+      text-decoration: none
+      color: #666666
+
